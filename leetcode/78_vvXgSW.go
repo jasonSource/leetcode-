@@ -52,7 +52,7 @@ func mergeTwoLists1(list1 *ListNode, list2 *ListNode) *ListNode {
 */
 func FindKthToTail( pHead *ListNode ,  k int ) *ListNode {
     // write code here
-	first = pHead
+	first := pHead
 	for i:=0;i<k;i++{
 		if first == nil{
 			return nil
