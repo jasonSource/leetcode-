@@ -31,6 +31,10 @@ func TestDeleteDuplicates(t *testing.T){
 	head2.Next = head3
 	res := deleteDuplicates(head1)
 	fmt.Println(res)
+}
 
-	
+func TestSeach(t *testing.T){
+	nums := []int{99999}
+	res := search(nums,99999)
+	fmt.Println(res)
 }
