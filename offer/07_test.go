@@ -21,7 +21,7 @@ func TestBuildTree(t *testing.T) {
 
 }
 
-//前序遍历
+// 前序遍历
 func ShowPreOrder(root *TreeNode) {
 	if root == nil {
 		return
@@ -31,7 +31,7 @@ func ShowPreOrder(root *TreeNode) {
 	ShowPreOrder(root.Right)
 }
 
-//中序遍历
+// 中序遍历
 func ShowInOrder(root *TreeNode) {
 	if root == nil {
 		return
@@ -41,7 +41,7 @@ func ShowInOrder(root *TreeNode) {
 	ShowPreOrder(root.Right)
 }
 
-//中序遍历
+// 中序遍历
 func ShowAfterOrder(root *TreeNode) {
 	if root == nil {
 		return

@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-//给你两个 非空 的链表，表示两个非负的整数。它们每位数字都是按照 逆序 的方式存储的，并且每个节点只能存储 一位 数字
+// 给你两个 非空 的链表，表示两个非负的整数。它们每位数字都是按照 逆序 的方式存储的，并且每个节点只能存储 一位 数字
 type ListNode struct {
 	Val  int
 	Next *ListNode
@@ -27,7 +27,7 @@ func TestAddTwoNumber(t *testing.T) {
 
 }
 
-//遍历链表
+// 遍历链表
 func printLink(l1 *ListNode) {
 	for l1 != nil {
 		fmt.Println(l1.Val)

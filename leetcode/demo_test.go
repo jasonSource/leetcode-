@@ -5,14 +5,14 @@ import (
 	"testing"
 )
 
-func PrintNodeList(head *ListNode){
-	for head != nil{
-		fmt.Print(head.Val,",")
+func PrintNodeList(head *ListNode) {
+	for head != nil {
+		fmt.Print(head.Val, ",")
 		head = head.Next
 	}
 }
 
-func TestReverseList(t *testing.T){
+func TestReverseList(t *testing.T) {
 	head1 := &ListNode{Val: 1}
 	head2 := &ListNode{Val: 2}
 	head3 := &ListNode{Val: 3}
@@ -23,7 +23,7 @@ func TestReverseList(t *testing.T){
 	PrintNodeList(h1)
 }
 
-func TestDeleteDuplicates(t *testing.T){
+func TestDeleteDuplicates(t *testing.T) {
 	head1 := &ListNode{Val: 1}
 	head2 := &ListNode{Val: 1}
 	head3 := &ListNode{Val: 2}
@@ -33,17 +33,17 @@ func TestDeleteDuplicates(t *testing.T){
 	fmt.Println(res)
 }
 
-func TestSeach(t *testing.T){
+func TestSeach(t *testing.T) {
 	nums := []int{99999}
-	res := search(nums,99999)
+	res := search(nums, 99999)
 	fmt.Println(res)
 }
 
-func TestFindPeakElement(t *testing.T){
-	fmt.Println(findPeakElement([]int{1,2,3,1}))
+func TestFindPeakElement(t *testing.T) {
+	fmt.Println(findPeakElement([]int{1, 2, 3, 1}))
 }
 
-func TestPreorderTraversal(t *testing.T){
+func TestPreorderTraversal(t *testing.T) {
 	node1 := &TreeNode{Val: 1}
 	node2 := &TreeNode{Val: 2}
 	node3 := &TreeNode{Val: 3}
